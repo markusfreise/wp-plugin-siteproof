@@ -1,0 +1,78 @@
+@use "functions" as *;
+
+.siteproof {
+    .sp-fix {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap-025x) var(--gap-05x);
+        align-items: center;
+        margin-top: var(--gap-025x);
+
+        &__input {
+            flex: 1 1 #{pxtorem(180)};
+            min-width: 0;
+        }
+
+        &__msg {
+            flex-basis: 100%;
+            font-size: var(--fs-small);
+            color: var(--c-copy-light);
+
+            &.is-ok {
+                color: var(--c-success);
+            }
+
+            &.is-error {
+                color: var(--c-danger);
+            }
+        }
+    }
+
+    .sp-options label {
+        display: block;
+        margin: var(--gap-025x) 0;
+    }
+
+    .sp-only {
+        margin: var(--gap) 0;
+        padding: 0;
+        border: 0;
+
+        legend {
+            padding: 0;
+            font-weight: 600;
+        }
+
+        &__table {
+            margin: var(--gap-05x) 0;
+            border-collapse: collapse;
+
+            th,
+            td {
+                padding: var(--gap-025x) var(--gap-15x) var(--gap-025x) 0;
+                text-align: left;
+                font-weight: 400;
+                white-space: nowrap;
+            }
+
+            label {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.3rem;
+            }
+
+            input {
+                margin: 0;
+            }
+        }
+
+        &:disabled {
+            color: var(--c-copy-light);
+        }
+    }
+
+    .sp-radio {
+        display: inline-block;
+        margin-right: var(--gap);
+    }
+}

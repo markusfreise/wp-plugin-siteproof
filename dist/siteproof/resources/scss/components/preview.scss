@@ -1,0 +1,27 @@
+@use "../functions" as *;
+
+// Measuring frame, shown scaled down so that it stays rendered and in view.
+.siteproof .sp-preview {
+    --sp-scale: 0.3;
+    position: relative;
+    width: calc(var(--sp-frame-w, 390) * var(--sp-scale) * 1px);
+    height: calc(var(--sp-frame-h, 844) * var(--sp-scale) * 1px);
+    max-width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-small);
+    background: var(--c-white);
+    margin: var(--gap-05x) 0;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 390px;
+        height: 844px;
+        border: 0;
+        transform: scale(var(--sp-scale));
+        transform-origin: 0 0;
+        pointer-events: none;
+    }
+}

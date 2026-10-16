@@ -1,0 +1,41 @@
+@use "../functions" as *;
+
+// Runner progress per step.
+.siteproof .sp-steps {
+    margin: 0 0 var(--gap);
+    padding: 0;
+    list-style: none;
+    max-width: #{pxtorem(640)};
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: var(--gap-025x) var(--gap);
+        margin: var(--gap-05x) 0;
+    }
+
+    &__count {
+        color: var(--c-copy-light);
+        font-variant-numeric: tabular-nums;
+    }
+
+    &__bar {
+        grid-column: 1 / -1;
+        height: #{pxtorem(6)};
+        border-radius: #{pxtorem(3)};
+        background: var(--c-background);
+        overflow: hidden;
+
+        span {
+            display: block;
+            height: 100%;
+            width: 0;
+            background: var(--c-corporate);
+            transition: width 0.3s;
+        }
+    }
+
+    .is-done .sp-steps__bar span {
+        background: var(--c-success);
+    }
+}

@@ -1,0 +1,12 @@
+// Standalone HTML export of a report.
+@use "properties";
+@use "scaffold";
+@use "typography";
+@use "ui";
+@use "tables";
+@use "forms";
+@use "components/dot";
+@use "components/filter";
+@use "components/tree";
+@use "components/headings";
+@use "views/report";

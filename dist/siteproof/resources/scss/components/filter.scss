@@ -1,0 +1,84 @@
+@use "../functions" as *;
+
+// Sticky filter bar (red / red and yellow / all), legend, expand/collapse.
+.siteproof {
+    .sp-bar {
+        position: sticky;
+        top: var(--sp-adminbar);
+        z-index: 50;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap-05x) var(--gap-15x);
+        align-items: center;
+        background: var(--c-background);
+        padding: 0.6rem 0;
+        margin: var(--gap) 0;
+        box-shadow: 0 1px 0 var(--c-border);
+    }
+
+    // Segmented control: the 1px gap on a coloured background separates the buttons.
+    .sp-filter {
+        display: inline-flex;
+        gap: 1px;
+        background: var(--c-corporate);
+        border: 1px solid var(--c-corporate);
+        border-radius: var(--radius-small);
+        overflow: hidden;
+
+        button {
+            font: inherit;
+            border: 0;
+            background: var(--c-white);
+            color: var(--c-corporate);
+            padding: 0.3rem 0.8rem;
+            cursor: pointer;
+            display: inline-flex;
+            gap: 0.35rem;
+            align-items: center;
+
+            &[aria-pressed="true"] {
+                background: var(--c-corporate);
+                color: var(--c-white);
+            }
+
+            &:focus-visible {
+                outline: 2px solid var(--c-corporate-hover);
+                outline-offset: -3px;
+            }
+        }
+    }
+
+    .sp-legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap);
+        color: var(--c-copy-light);
+
+        span {
+            display: inline-flex;
+            gap: 0.35rem;
+            align-items: center;
+        }
+    }
+
+    .sp-toggles {
+        display: flex;
+        gap: var(--gap-025x);
+    }
+
+    // Filter
+    .sp-report[data-filter="red"] {
+        [data-level="yellow"],
+        [data-level="grey"],
+        [data-level="green"] {
+            display: none;
+        }
+    }
+
+    .sp-report[data-filter="ry"] {
+        [data-level="grey"],
+        [data-level="green"] {
+            display: none;
+        }
+    }
+}

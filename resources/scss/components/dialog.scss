@@ -1,0 +1,25 @@
+@use "../functions" as *;
+
+.siteproof .sp-dialog {
+    max-width: min(#{pxtorem(720)}, calc(100vw - 32px));
+    border: 0;
+    border-radius: var(--radius);
+    padding: var(--gap) var(--gap-15x);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    table {
+        margin: var(--gap-05x) 0;
+
+        th {
+            font-weight: 500;
+        }
+    }
+
+    .is-selected {
+        font-weight: 600;
+    }
+}

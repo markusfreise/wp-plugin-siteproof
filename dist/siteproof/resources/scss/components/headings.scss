@@ -1,0 +1,22 @@
+.siteproof {
+    .sp-headings {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sp-h {
+        padding: 0.1rem 0 0.1rem calc((var(--lvl, 1) - 1) * 1.4rem);
+
+        &__tag {
+            display: inline-block;
+            min-width: 2.2em;
+            font-weight: 600;
+            color: var(--c-copy-light);
+
+            &.sp-bad {
+                color: var(--c-danger);
+            }
+        }
+    }
+}

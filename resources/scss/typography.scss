@@ -1,0 +1,16 @@
+.siteproof {
+    h1 {
+        font-size: var(--fs-hl-large);
+        margin: var(--gap-05x) 0 var(--gap-025x);
+    }
+
+    h2 {
+        font-size: var(--fs-hl-medium);
+        margin: var(--m-vert) 0 var(--gap-05x);
+    }
+
+    code {
+        font-family: var(--ff-fixed);
+        font-size: 0.9em;
+    }
+}

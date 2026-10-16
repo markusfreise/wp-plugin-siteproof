@@ -1,0 +1,62 @@
+@use "functions" as *;
+
+// Design tokens. Scoped to .siteproof (not :root) so they never collide with other admin screens.
+.siteproof {
+    // Colours (aligned with the WordPress admin palette)
+    --c-copy: #1d2327;
+    --c-copy-light: #646970;
+    --c-head: #1d2327;
+    --c-corporate: #2271b1;
+    --c-corporate-hover: #135e96;
+    --c-accent: #2271b1;
+    --c-danger: #d63638;
+    --c-warning: #dba617;
+    --c-warning-text: #996800;
+    --c-success: #00a32a;
+    --c-muted: #a7aaad;
+    --c-background: #f0f0f1;
+    --c-background-soft: #f6f7f7;
+    --c-white: #ffffff;
+    --c-border: #c3c4c7;
+    --c-border-light: #f0f0f1;
+    --c-mark: #fbe4e4;
+    --c-info: #f0f6fc;
+
+    // Fonts
+    --ff-copy: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --ff-fixed: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --fs-mini: #{pxtorem(12)};
+    --fs-small: #{pxtorem(13)};
+    --fs-copy: #{pxtorem(14)};
+    --fs-medium: #{pxtorem(16)};
+    --fs-large: #{pxtorem(18)};
+    --fs-hl-small: #{pxtorem(16)};
+    --fs-hl-medium: #{pxtorem(20)};
+    --fs-hl-large: #{pxtorem(26)};
+
+    // Spacing
+    --gap: #{pxtorem(16)};
+    --gap-025x: calc(var(--gap) * 0.25);
+    --gap-05x: calc(var(--gap) * 0.5);
+    --gap-15x: calc(var(--gap) * 1.5);
+    --gap-2x: calc(var(--gap) * 2);
+    --m-vert: var(--gap-15x);
+    --m-vert-slim: var(--gap-05x);
+
+    // Layout
+    --max-width: #{pxtorem(1400)};
+    --radius: #{pxtorem(6)};
+    --radius-small: #{pxtorem(3)};
+    --shadow-flat: 0 1px 1px rgba(0, 0, 0, 0.04);
+
+    // Sticky offsets: admin bar, then the filter bar (height set by report.js)
+    --sp-adminbar: var(--wp-admin--admin-bar--height, 32px);
+    --sp-bar-h: #{pxtorem(48)};
+
+    // Status dots
+    --dot: 0.85em;
+}
+
+body.sp-export .siteproof {
+    --sp-adminbar: 0px;
+}

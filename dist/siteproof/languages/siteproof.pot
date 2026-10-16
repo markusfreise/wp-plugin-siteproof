@@ -1,0 +1,1723 @@
+# Copyright (C) 2026 Markus Freise
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Siteproof – AI Content Audit 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/siteproof/\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-30T06:43:23+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: siteproof\n"
+
+#. Plugin Name of the plugin
+#: siteproof.php
+msgid "Siteproof – AI Content Audit"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: siteproof.php
+msgid "https://siteproof.markus-freise.de"
+msgstr ""
+
+#. Description of the plugin
+#: siteproof.php
+msgid "Audits every page in the admin: SEO, load time, content (heading structure, AI proofreading), images, links and accessibility, with a site-wide assessment, traffic-light ratings and a comparison with the previous run."
+msgstr ""
+
+#. Author of the plugin
+#: siteproof.php
+msgid "Markus Freise"
+msgstr ""
+
+#. Author URI of the plugin
+#: siteproof.php
+msgid "https://markus-freise.de"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:40
+msgid "Siteproof"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:41
+msgid "Audits"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:42
+#: includes/class-siteproof-admin.php:389
+msgid "Siteproof settings"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:42
+#: includes/class-siteproof-admin.php:52
+#: includes/class-siteproof-admin.php:254
+msgid "Settings"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:80
+msgid "Testing…"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:81
+msgid "Loading models…"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:82
+#: includes/class-siteproof-admin.php:448
+msgid "Default"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:83
+msgid "Store a key first."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:84
+msgid "USD per million tokens (in/out)"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:85
+msgid "Request failed."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:97
+msgid "Saving…"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:98
+msgid "Saving failed."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:99
+msgid "Open editor"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:111
+msgid "Read pages"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:112
+msgid "Check links"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:113
+msgid "Measure in the browser (images, timing, accessibility)"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:114
+msgid "PageSpeed Insights"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:115
+#: includes/class-siteproof-admin.php:396
+msgid "AI proofreading"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:116
+msgid "Build report"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:117
+msgid "Paused. You can resume this run later from the list."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:118
+msgid "Error"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:119
+msgid "Done - opening the report…"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:120
+#: includes/class-siteproof-admin.php:268
+msgid "Estimated AI costs"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:121
+msgid "no price stored"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:122
+msgid "tokens"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:123
+msgid "selected"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:124
+msgid "not configured"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:125
+msgid "local, unthrottled"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:126
+msgid "Stop the audit? It can be resumed later."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:154
+#: includes/class-siteproof-admin.php:381
+msgid "You are not allowed to access this page."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:178
+msgid "All audits"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:180
+msgid "Export as HTML"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:197
+msgid "Delete all audit runs permanently?"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:197
+msgid "Delete this audit run permanently?"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:200
+msgid "Delete all"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:200
+msgid "Delete"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:216
+msgid "Siteproof audits"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:219
+msgid "Deleted."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:221
+msgid "Checks every published page: SEO, load time, content (headings, proofreading), images, links and accessibility. Reports are visible to administrators only."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:227
+msgid "New audit"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:229
+msgid "Steps"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:230
+msgid "Read pages and check links (always)"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:231
+msgid "Measure in the browser: rendered image sizes, lazy loading, timing, accessibility (axe-core)"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:232
+msgid "Load time via Google PageSpeed Insights"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:234
+msgid "(no API key stored - local measurement is used)"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:237
+msgid "AI proofreading and SEO suggestions"
+msgstr ""
+
+#. translators: %s: provider
+#: includes/class-siteproof-admin.php:242
+#, php-format
+msgid "(%s, costs are shown before the step starts)"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:243
+msgid "(no AI provider configured)"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:249
+msgid "Only these post IDs (optional, comma-separated)"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:253
+msgid "Start audit"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:256
+msgid "Keep this tab open while the audit runs. Pages are loaded in a small preview frame; analytics scripts on your pages may count these visits."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:259
+msgid "Audit running"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:263
+msgid "Stop"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:264
+msgid "Log"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:270
+msgid "Estimate based on the collected text; actual costs depend on the model and its reasoning. Prices are editable in the settings."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:272
+msgid "Start proofreading"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:273
+msgid "Skip proofreading"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:281
+msgid "Stored audit runs"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:283
+msgid "No audit runs yet."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:287
+msgid "running"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:288
+msgid "paused"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:289
+msgid "done"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:291
+msgid "Date"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:291
+msgid "Status"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:291
+#: includes/class-siteproof-report.php:1347
+msgid "Pages"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:291
+msgid "Result"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:291
+msgid "Most important"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:291
+msgid "Actions"
+msgstr ""
+
+#. translators: 1: red, 2: yellow, 3: green
+#: includes/class-siteproof-admin.php:312
+#, php-format
+msgid "%1$d critical, %2$d to check, %3$d OK"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:316
+msgid "View"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:316
+msgid "Export"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:317
+msgid "Resume"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:329
+#: includes/class-siteproof-admin.php:347
+#: includes/class-siteproof-admin.php:580
+#: includes/class-siteproof-admin.php:623
+#: includes/class-siteproof-admin.php:635
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:353
+msgid "Report not found."
+msgstr ""
+
+#. translators: %s: site name
+#: includes/class-siteproof-admin.php:366
+#: includes/class-siteproof-report.php:1336
+#, php-format
+msgid "Content audit %s"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:397
+msgid "Proofreading and SEO suggestions are sent page by page to the selected provider (text segments, title, meta description, image URLs). Anthropic and OpenAI need an API key from their developer consoles: logging in with a Claude Pro/Max or ChatGPT subscription is not possible - Anthropic does not allow subscription logins in third-party applications, and \"Sign in with ChatGPT\" only provides identity, no model access. OpenRouter can be connected with one click and gives access to Claude and OpenAI models with a single key."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:400
+msgid "Provider"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:408
+msgid "Fallback"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:411
+msgid "none"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:416
+msgid "Used when the selected provider fails or hits its rate limit."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:425
+msgid "Uses the AI connections of this site. WordPress chooses provider and model; no separate key is needed."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:426
+msgid "Manage connections"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:428
+#: includes/class-siteproof-admin.php:553
+msgid "Test connection"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:439
+msgid "Connect with OpenRouter"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:441
+msgid "Disconnect"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:446
+msgid "Model"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:450
+msgid "Reload list"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:456
+msgid "Prices"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:459
+msgid "One line per model: model ID | USD per million input tokens | USD per million output tokens. Used for the cost estimate before proofreading. OpenRouter prices are loaded automatically."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:466
+#: includes/class-siteproof-report.php:1127
+msgid "Load time"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:469
+msgid "PageSpeed Insights API key"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:472
+msgid "Free key from the Google Cloud Console (PageSpeed Insights API). Without a key, load time is measured locally in the browser (unthrottled, less realistic)."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:476
+msgid "Live URL"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:479
+msgid "For staging or local sites: PageSpeed Insights measures the same paths on this domain."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:486
+msgid "Scope"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:489
+msgid "Post types"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:497
+msgid "Excluded URLs"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:500
+msgid "One pattern per line, * as wildcard, matched against path or full URL."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:504
+msgid "Word list"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:507
+msgid "Names and terms that are always correct (one per line)."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:514
+msgid "Thresholds"
+msgstr ""
+
+#. translators: %s: constant name
+#: includes/class-siteproof-admin.php:540
+#, php-format
+msgid "defined in wp-config.php (%s)"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:545
+#: includes/class-siteproof-admin.php:546
+msgid "API key"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:549
+msgid "Delete stored key"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:564
+msgid "Settings saved."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:565
+msgid "Connected with OpenRouter."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:566
+msgid "OpenRouter connection removed."
+msgstr ""
+
+#: includes/class-siteproof-admin.php:567
+msgid "The OpenRouter connection failed. Please try again."
+msgstr ""
+
+#. translators: %d: number of audit runs
+#: includes/class-siteproof-admin.php:691
+#, php-format
+msgid "Siteproof: %d audit run is stored."
+msgid_plural "Siteproof: %d audit runs are stored."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-siteproof-admin.php:692
+msgid "Reports contain findings and edit links and are visible to administrators only. Delete them when they are no longer needed, at the latest before going live:"
+msgstr ""
+
+#: includes/class-siteproof-admin.php:694
+msgid "Siteproof › Audits"
+msgstr ""
+
+#: includes/class-siteproof-collector.php:336
+#: includes/class-siteproof-report.php:1128
+msgid "Content"
+msgstr ""
+
+#. translators: %d: number of images
+#: includes/class-siteproof-fixer.php:50
+#, php-format
+msgid "Saved to the media library and to %d image on this page."
+msgid_plural "Saved to the media library and to %d images on this page."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-siteproof-fixer.php:53
+msgid "Saved to the media library."
+msgstr ""
+
+#: includes/class-siteproof-fixer.php:73
+#: includes/class-siteproof-rest.php:315
+msgid "Page not found."
+msgstr ""
+
+#: includes/class-siteproof-fixer.php:120
+msgid "Correction saved to the page (a revision was created)."
+msgstr ""
+
+#: includes/class-siteproof-fixer.php:125
+msgid "The text was not found exactly once in the page content (it may span formatting, come from a template, reusable block or custom field, or occur several times). Please correct it in the editor."
+msgstr ""
+
+#: includes/class-siteproof-links.php:151
+#: includes/class-siteproof-links.php:220
+msgid "no response"
+msgstr ""
+
+#: includes/class-siteproof-links.php:152
+msgid "Timeout"
+msgstr ""
+
+#: includes/class-siteproof-links.php:182
+msgid "Format ok (not requested)"
+msgstr ""
+
+#: includes/class-siteproof-links.php:182
+msgid "Invalid format"
+msgstr ""
+
+#. translators: %s: TLS error
+#: includes/class-siteproof-links.php:238
+#, php-format
+msgid "Reachable, but the certificate could not be verified (%s) - check in a browser"
+msgstr ""
+
+#: includes/class-siteproof-links.php:241
+msgid "429 too many requests (rate limit) - check manually"
+msgstr ""
+
+#: includes/class-siteproof-links.php:244
+#: includes/class-siteproof-links.php:283
+msgid "403 access denied for automated requests - check manually"
+msgstr ""
+
+#. translators: %d: HTTP status code
+#: includes/class-siteproof-links.php:247
+#, php-format
+msgid "Social network answers bots with %d - check manually"
+msgstr ""
+
+#: includes/class-siteproof-links.php:256
+msgid "Site blocks automated requests - check manually"
+msgstr ""
+
+#: includes/class-siteproof-links.php:269
+msgid "Redirects to the front page - target probably does not exist (soft 404)"
+msgstr ""
+
+#. translators: %s: anchor ID
+#: includes/class-siteproof-links.php:299
+#, php-format
+msgid "Anchor #%s does not exist"
+msgstr ""
+
+#: includes/class-siteproof-report.php:106
+msgid "not collected"
+msgstr ""
+
+#: includes/class-siteproof-report.php:237
+#: includes/class-siteproof-report.php:1323
+msgid "OK"
+msgstr ""
+
+#: includes/class-siteproof-report.php:238
+#: includes/class-siteproof-report.php:1321
+msgid "check"
+msgstr ""
+
+#: includes/class-siteproof-report.php:239
+#: includes/class-siteproof-report.php:1319
+msgid "critical"
+msgstr ""
+
+#: includes/class-siteproof-report.php:240
+#: includes/class-siteproof-report.php:540
+#: includes/class-siteproof-report.php:1325
+msgid "not checkable"
+msgstr ""
+
+#: includes/class-siteproof-report.php:324
+#: includes/class-siteproof-report.php:1317
+msgid "very critical"
+msgstr ""
+
+#: includes/class-siteproof-report.php:346
+#: includes/class-siteproof-report.php:847
+#: includes/class-siteproof-report.php:971
+msgid "new"
+msgstr ""
+
+#: includes/class-siteproof-report.php:436
+msgid "not loaded (slider/lazy loading) - size unknown"
+msgstr ""
+
+#: includes/class-siteproof-report.php:444
+msgid "SVG over 100 KB"
+msgstr ""
+
+#. translators: 1: size, 2: limit
+#: includes/class-siteproof-report.php:451
+#: includes/class-siteproof-report.php:454
+#: includes/class-siteproof-report.php:457
+#, php-format
+msgid "%1$s - over %2$s"
+msgstr ""
+
+#. translators: 1: delivered width, 2: needed width, 3: ratio
+#: includes/class-siteproof-report.php:464
+#, php-format
+msgid "%1$dpx delivered, ~%2$dpx needed (%3$s×)"
+msgstr ""
+
+#. translators: 1: delivered width, 2: needed width
+#: includes/class-siteproof-report.php:474
+#, php-format
+msgid "blurry: %1$dpx delivered, ~%2$dpx needed"
+msgstr ""
+
+#. translators: %d: KB per megapixel
+#: includes/class-siteproof-report.php:481
+#, php-format
+msgid "%d KB per megapixel (compression/format)"
+msgstr ""
+
+#. translators: %d: KB per megapixel
+#: includes/class-siteproof-report.php:485
+#, php-format
+msgid "%d KB per megapixel"
+msgstr ""
+
+#: includes/class-siteproof-report.php:490
+msgid "WebP/AVIF usually saves 30-60 %"
+msgstr ""
+
+#: includes/class-siteproof-report.php:512
+#: includes/class-siteproof-report.php:534
+msgid "reachable"
+msgstr ""
+
+#: includes/class-siteproof-report.php:515
+msgid "not requested"
+msgstr ""
+
+#. translators: 1: status code, 2: target URL
+#: includes/class-siteproof-report.php:519
+#, php-format
+msgid "%1$d redirect -> %2$s"
+msgstr ""
+
+#. translators: 1: status code, 2: target URL
+#: includes/class-siteproof-report.php:523
+#, php-format
+msgid "%1$d temporary redirect -> %2$s"
+msgstr ""
+
+#: includes/class-siteproof-report.php:526
+msgid "not reachable"
+msgstr ""
+
+#. translators: %d: status code
+#: includes/class-siteproof-report.php:526
+#, php-format
+msgid "target %d"
+msgstr ""
+
+#: includes/class-siteproof-report.php:543
+msgid "not checked"
+msgstr ""
+
+#. translators: %s: field name
+#: includes/class-siteproof-report.php:587
+msgid "Suggestion:"
+msgstr ""
+
+#. translators: %s: field name
+#: includes/class-siteproof-report.php:587
+#, php-format
+msgid "%s missing - no suggestion yet"
+msgstr ""
+
+#: includes/class-siteproof-report.php:590
+msgid "Indexing"
+msgstr ""
+
+#. translators: %s: title template
+#: includes/class-siteproof-report.php:593
+#: includes/class-siteproof-report.php:600
+msgid "Meta title"
+msgstr ""
+
+#. translators: %d: number of characters
+#: includes/class-siteproof-report.php:599
+#: includes/class-siteproof-report.php:609
+#, php-format
+msgid "%d characters"
+msgstr ""
+
+#. translators: %d: number of characters
+#: includes/class-siteproof-report.php:599
+msgid "custom title"
+msgstr ""
+
+#. translators: %s: title template
+#: includes/class-siteproof-report.php:599
+#, php-format
+msgid "from template %s"
+msgstr ""
+
+#: includes/class-siteproof-report.php:603
+#: includes/class-siteproof-report.php:610
+msgid "Meta description"
+msgstr ""
+
+#. translators: %d: number of characters
+#: includes/class-siteproof-report.php:609
+msgid "custom description"
+msgstr ""
+
+#. translators: %d: number of characters
+#: includes/class-siteproof-report.php:609
+msgid "generated automatically"
+msgstr ""
+
+#: includes/class-siteproof-report.php:619
+msgid "Default image of the website"
+msgstr ""
+
+#: includes/class-siteproof-report.php:622
+msgid "points to a different URL"
+msgstr ""
+
+#: includes/class-siteproof-report.php:645
+msgid "Not measured."
+msgstr ""
+
+#: includes/class-siteproof-report.php:657
+msgid "Load time (load)"
+msgstr ""
+
+#: includes/class-siteproof-report.php:657
+msgid "until everything is loaded"
+msgstr ""
+
+#: includes/class-siteproof-report.php:658
+msgid "First Contentful Paint"
+msgstr ""
+
+#: includes/class-siteproof-report.php:658
+msgid "first visible content"
+msgstr ""
+
+#: includes/class-siteproof-report.php:659
+msgid "Largest Contentful Paint"
+msgstr ""
+
+#: includes/class-siteproof-report.php:659
+msgid "largest element visible (Core Web Vital)"
+msgstr ""
+
+#: includes/class-siteproof-report.php:660
+msgid "Layout shift (CLS)"
+msgstr ""
+
+#: includes/class-siteproof-report.php:660
+msgid "Core Web Vital"
+msgstr ""
+
+#: includes/class-siteproof-report.php:663
+msgid "Total Blocking Time"
+msgstr ""
+
+#: includes/class-siteproof-report.php:663
+msgid "lab proxy for INP"
+msgstr ""
+
+#. translators: %d: number of requests
+#: includes/class-siteproof-report.php:669
+msgid "Total size (initial)"
+msgstr ""
+
+#. translators: %d: number of requests
+#: includes/class-siteproof-report.php:669
+#, php-format
+msgid "%d requests"
+msgstr ""
+
+#: includes/class-siteproof-report.php:673
+msgid "Fonts"
+msgstr ""
+
+#: includes/class-siteproof-report.php:674
+msgid "Third parties"
+msgstr ""
+
+#: includes/class-siteproof-report.php:674
+msgid "other domains"
+msgstr ""
+
+#. translators: %d: number of images
+#: includes/class-siteproof-report.php:676
+msgid "Images and media total"
+msgstr ""
+
+#. translators: %d: number of images
+#: includes/class-siteproof-report.php:676
+#, php-format
+msgid "after scrolling through, %d images"
+msgstr ""
+
+#. translators: 1: images, 2: iframes
+#: includes/class-siteproof-report.php:683
+msgid "Not lazy loaded"
+msgstr ""
+
+#. translators: 1: images, 2: iframes
+#: includes/class-siteproof-report.php:683
+#, php-format
+msgid "%1$d images, %2$d iframes"
+msgstr ""
+
+#. translators: 1: images, 2: iframes
+#: includes/class-siteproof-report.php:683
+msgid "below the visible area, but loaded immediately"
+msgstr ""
+
+#: includes/class-siteproof-report.php:687
+msgid "LCP (real users)"
+msgstr ""
+
+#: includes/class-siteproof-report.php:687
+msgid "Chrome UX Report, 28 days, 75th percentile"
+msgstr ""
+
+#: includes/class-siteproof-report.php:688
+msgid "INP (real users)"
+msgstr ""
+
+#: includes/class-siteproof-report.php:688
+msgid "Interaction to Next Paint"
+msgstr ""
+
+#: includes/class-siteproof-report.php:689
+msgid "CLS (real users)"
+msgstr ""
+
+#. translators: %s: measured URL
+#: includes/class-siteproof-report.php:704
+#, php-format
+msgid "Measured by PageSpeed Insights (Lighthouse mobile, simulated 4G and CPU slowdown) against %s."
+msgstr ""
+
+#. translators: %d: score
+#: includes/class-siteproof-report.php:704
+#, php-format
+msgid "Performance score %d."
+msgstr ""
+
+#. translators: %d: score
+#: includes/class-siteproof-report.php:704
+msgid "No field data from real users for this URL."
+msgstr ""
+
+#: includes/class-siteproof-report.php:706
+msgid "Measured locally in the browser (390px wide), unthrottled, browser cache possible - values are optimistic. Store a PageSpeed Insights key (and a live URL for staging sites) for realistic numbers."
+msgstr ""
+
+#. translators: %s: error
+#: includes/class-siteproof-report.php:706
+#, php-format
+msgid "PageSpeed Insights failed: %s"
+msgstr ""
+
+#. translators: %s: seconds
+#: includes/class-siteproof-report.php:724
+#, php-format
+msgid "the largest content appears only after %s"
+msgstr ""
+
+#. translators: %s: size
+#: includes/class-siteproof-report.php:728
+#, php-format
+msgid "images account for %s"
+msgstr ""
+
+#. translators: %d: number of images
+#: includes/class-siteproof-report.php:732
+#, php-format
+msgid "%d image loads immediately instead of on scroll"
+msgid_plural "%d images load immediately instead of on scroll"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: list of causes
+#: includes/class-siteproof-report.php:735
+#, php-format
+msgid "Too slow on mobile: %s."
+msgstr ""
+
+#. translators: %s: list of causes
+#: includes/class-siteproof-report.php:735
+msgid "Mobile load time is in the green range."
+msgstr ""
+
+#: includes/class-siteproof-report.php:746
+msgid "Spelling"
+msgstr ""
+
+#: includes/class-siteproof-report.php:747
+msgid "Punctuation"
+msgstr ""
+
+#: includes/class-siteproof-report.php:748
+msgid "Grammar"
+msgstr ""
+
+#: includes/class-siteproof-report.php:749
+msgid "Style"
+msgstr ""
+
+#: includes/class-siteproof-report.php:770
+msgid "No H1 found"
+msgstr ""
+
+#: includes/class-siteproof-report.php:784
+msgid "hidden"
+msgstr ""
+
+#. translators: 1: previous level, 2: level
+#: includes/class-siteproof-report.php:793
+#, php-format
+msgid "Jump from H%1$d to H%2$d"
+msgstr ""
+
+#: includes/class-siteproof-report.php:794
+msgid "additional H1"
+msgstr ""
+
+#: includes/class-siteproof-report.php:822
+msgid "Passage"
+msgstr ""
+
+#: includes/class-siteproof-report.php:822
+#: includes/class-siteproof-report.php:837
+msgid "Correction"
+msgstr ""
+
+#: includes/class-siteproof-report.php:822
+#: includes/class-siteproof-report.php:931
+msgid "Type"
+msgstr ""
+
+#: includes/class-siteproof-report.php:822
+#: includes/class-siteproof-report.php:931
+#: includes/class-siteproof-report.php:1031
+msgid "Block"
+msgstr ""
+
+#: includes/class-siteproof-report.php:827
+msgid "applied"
+msgstr ""
+
+#: includes/class-siteproof-report.php:839
+msgid "Apply"
+msgstr ""
+
+#. translators: %s: error message
+#: includes/class-siteproof-report.php:857
+#, php-format
+msgid "Proofreading failed: %s"
+msgstr ""
+
+#: includes/class-siteproof-report.php:859
+msgid "No errors found."
+msgstr ""
+
+#: includes/class-siteproof-report.php:859
+msgid "Not proofread yet (AI proofreading was not part of this run)."
+msgstr ""
+
+#. translators: 1: provider, 2: model
+#: includes/class-siteproof-report.php:863
+#, php-format
+msgid "Proofread by %1$s, model %2$s."
+msgstr ""
+
+#. translators: %d: number
+#: includes/class-siteproof-report.php:863
+#, php-format
+msgid "%d finding discarded (text not found verbatim)."
+msgid_plural "%d findings discarded (text not found verbatim)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-siteproof-report.php:866
+msgid "Heading structure"
+msgstr ""
+
+#: includes/class-siteproof-report.php:866
+msgid "No headings in the content area."
+msgstr ""
+
+#: includes/class-siteproof-report.php:866
+msgid "Proofreading"
+msgstr ""
+
+#: includes/class-siteproof-report.php:924
+msgid "No images."
+msgstr ""
+
+#. translators: 1: number of images, 2: total size
+#: includes/class-siteproof-report.php:929
+#, php-format
+msgid "%1$d images, %2$s in total. Rating: delivered vs needed (rendered width × 2 for retina, mobile) and KB per megapixel."
+msgstr ""
+
+#: includes/class-siteproof-report.php:931
+msgid "Rating"
+msgstr ""
+
+#: includes/class-siteproof-report.php:931
+msgid "Image"
+msgstr ""
+
+#: includes/class-siteproof-report.php:931
+#: includes/class-siteproof-report.php:947
+msgid "Alt text"
+msgstr ""
+
+#: includes/class-siteproof-report.php:931
+msgid "Rendered"
+msgstr ""
+
+#: includes/class-siteproof-report.php:931
+msgid "Delivered"
+msgstr ""
+
+#: includes/class-siteproof-report.php:931
+msgid "Size"
+msgstr ""
+
+#: includes/class-siteproof-report.php:931
+#: includes/class-siteproof-report.php:1130
+msgid "Links"
+msgstr ""
+
+#: includes/class-siteproof-report.php:941
+#: includes/class-siteproof-report.php:1036
+msgid "not set"
+msgstr ""
+
+#: includes/class-siteproof-report.php:941
+msgid "alt=\"\" (decorative?)"
+msgstr ""
+
+#: includes/class-siteproof-report.php:948
+msgid "Describe the image"
+msgstr ""
+
+#: includes/class-siteproof-report.php:950
+msgid "Save"
+msgstr ""
+
+#: includes/class-siteproof-report.php:954
+msgid "saved from this report"
+msgstr ""
+
+#: includes/class-siteproof-report.php:958
+#: includes/class-siteproof-report.php:1234
+msgid "Page"
+msgstr ""
+
+#: includes/class-siteproof-report.php:961
+#: includes/class-siteproof-report.php:1185
+msgid "Edit page"
+msgstr ""
+
+#: includes/class-siteproof-report.php:964
+msgid "Edit image"
+msgstr ""
+
+#: includes/class-siteproof-report.php:975
+#: includes/class-siteproof-report.php:1479
+msgid "CSS background"
+msgstr ""
+
+#: includes/class-siteproof-report.php:989
+msgid "Embedded media"
+msgstr ""
+
+#: includes/class-siteproof-report.php:992
+msgid "no loading attribute"
+msgstr ""
+
+#: includes/class-siteproof-report.php:992
+msgid "no title"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1028
+msgid "No links."
+msgstr ""
+
+#: includes/class-siteproof-report.php:1031
+msgid "Linked"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1031
+msgid "Target"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1031
+msgid "Check"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1036
+msgid "Image:"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1042
+msgid "no link text"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1049
+msgid "internal"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1049
+#: includes/class-siteproof-report.php:1326
+msgid "external"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1059
+msgid "Circle = internal/anchor, square = external. Green reachable, yellow redirect, red broken, grey not automatically checkable."
+msgstr ""
+
+#: includes/class-siteproof-report.php:1074
+msgid "Not checked (browser measurement was not part of this run)."
+msgstr ""
+
+#: includes/class-siteproof-report.php:1088
+msgid "Rule"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1088
+msgid "Elements"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1088
+msgid "Example"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1107
+msgid "No page-specific violations (automatically checkable)."
+msgstr ""
+
+#. translators: %d: number of rules
+#: includes/class-siteproof-report.php:1111
+#, php-format
+msgid "Plus %d rule that occurs on almost every page - see"
+msgid_plural "Plus %d rules that occur on almost every page - see"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of rules
+#: includes/class-siteproof-report.php:1111
+#: includes/class-siteproof-report.php:1345
+msgid "Global"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1113
+msgid "axe-core finds about a third of all issues; check keyboard use, focus and screen reader flow manually."
+msgstr ""
+
+#: includes/class-siteproof-report.php:1126
+msgid "SEO"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1129
+msgid "Images"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1131
+msgid "Accessibility"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1185
+msgid "View page"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1216
+msgid "Headings in header, footer and popups - they appear on every page in addition to the content structure."
+msgstr ""
+
+#: includes/class-siteproof-report.php:1225
+msgid "Global: header, footer, site-wide"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1226
+msgid "Template headings"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1227
+msgid "Template images"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1228
+msgid "Template links"
+msgstr ""
+
+#. translators: %d: number of rules
+#: includes/class-siteproof-report.php:1230
+#, php-format
+msgid "Accessibility on (almost) every page (%d rules)"
+msgstr ""
+
+#. translators: 1: date, 2: new findings, 3: fixed findings
+#: includes/class-siteproof-report.php:1282
+#, php-format
+msgid "Compared with the audit of %1$s: %2$s new findings (marked \"new\"), %3$s fixed."
+msgstr ""
+
+#. translators: %d: number
+#: includes/class-siteproof-report.php:1285
+#, php-format
+msgid "Fixed findings (%d)"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1288
+msgid "First run - the next audit will mark new and fixed findings."
+msgstr ""
+
+#. translators: 1: number, 2: paths
+#: includes/class-siteproof-report.php:1296
+#, php-format
+msgid "%1$d not reachable (%2$s)."
+msgstr ""
+
+#. translators: 1: number of pages, 2: red, 3: yellow, 4: green
+#: includes/class-siteproof-report.php:1300
+#, php-format
+msgid "%1$d pages checked. Status: %2$d critical, %3$d to check, %4$d OK (per page and section)."
+msgstr ""
+
+#: includes/class-siteproof-report.php:1309
+msgid "Filter findings"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1311
+msgid "Red only"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1314
+msgid "Red and yellow"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1315
+msgid "All"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1327
+msgid "external link"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1328
+msgid "Expand all"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1329
+msgid "Collapse all"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1341
+msgid "Overall assessment"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1343
+msgid "Overview"
+msgstr ""
+
+#. translators: 1: provider and model, 2: cost
+#: includes/class-siteproof-report.php:1375
+#, php-format
+msgid "Proofread by %1$s%2$s."
+msgstr ""
+
+#. translators: %d: number
+#: includes/class-siteproof-report.php:1394
+#, php-format
+msgid "and %d more"
+msgstr ""
+
+#. translators: 1: pages without H1, 2: all pages
+#: includes/class-siteproof-report.php:1407
+#, php-format
+msgid "The H1 is missing on %1$d of %2$d pages"
+msgstr ""
+
+#. translators: 1: pages without H1, 2: all pages
+#: includes/class-siteproof-report.php:1407
+msgid "Probably a template/block issue (the hero block does not output the main heading as H1)."
+msgstr ""
+
+#. translators: %d: number of pages
+#: includes/class-siteproof-report.php:1424
+#, php-format
+msgid "Heading jumps on %d pages"
+msgstr ""
+
+#. translators: %d: number of pages
+#: includes/class-siteproof-report.php:1431
+#, php-format
+msgid "%d page set to noindex"
+msgid_plural "%d pages set to noindex"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of pages
+#: includes/class-siteproof-report.php:1431
+msgid "check whether intended."
+msgstr ""
+
+#: includes/class-siteproof-report.php:1434
+msgid "Search engine visibility is switched off (blog_public = 0)"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1434
+msgid "Settings > Reading. Normal on local and staging sites, critical on the live site."
+msgstr ""
+
+#. translators: %d: number of pages
+#: includes/class-siteproof-report.php:1441
+#, php-format
+msgid "%d pages without a custom meta description"
+msgstr ""
+
+#. translators: %d: number of pages
+#: includes/class-siteproof-report.php:1441
+msgid "Generated automatically from the content."
+msgstr ""
+
+#. translators: %d: number of pages
+#: includes/class-siteproof-report.php:1447
+#, php-format
+msgid "%d pages only share the default preview image"
+msgstr ""
+
+#. translators: %d: number of pages
+#: includes/class-siteproof-report.php:1447
+msgid "All pages look the same when shared on social networks. Set a featured image."
+msgstr ""
+
+#. translators: 1: file, 2: pages, 3: all pages
+#: includes/class-siteproof-report.php:1478
+#, php-format
+msgid "%1$s loads on %2$d of %3$d pages"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1479
+msgid "in header/footer"
+msgstr ""
+
+#: includes/class-siteproof-report.php:1479
+msgid "Shrinking it once helps every page."
+msgstr ""
+
+#. translators: 1: images without alt, 2: all images
+#: includes/class-siteproof-report.php:1495
+#, php-format
+msgid "%1$d of %2$d images without alt text"
+msgstr ""
+
+#. translators: 1: images without alt, 2: all images
+#: includes/class-siteproof-report.php:1495
+msgid "Details and inline editing per page in the Images section."
+msgstr ""
+
+#. translators: 1: median LCP, 2: median page weight
+#: includes/class-siteproof-report.php:1505
+#, php-format
+msgid "Median LCP %1$s, median page weight %2$s."
+msgstr ""
+
+#. translators: 1: pages, 2: measured pages
+#: includes/class-siteproof-report.php:1508
+#, php-format
+msgid "Mobile load time critical on %1$d of %2$d pages"
+msgstr ""
+
+#. translators: %s: size
+#: includes/class-siteproof-report.php:1511
+#, php-format
+msgid "Pages weigh %s on average (mobile)"
+msgstr ""
+
+#. translators: %s: size
+#: includes/class-siteproof-report.php:1518
+#, php-format
+msgid "JavaScript %s on almost every page"
+msgstr ""
+
+#. translators: %s: size
+#: includes/class-siteproof-report.php:1518
+msgid "Theme/plugins: load libraries only on pages that need them."
+msgstr ""
+
+#. translators: %s: size
+#: includes/class-siteproof-report.php:1522
+#, php-format
+msgid "Fonts %s on almost every page"
+msgstr ""
+
+#. translators: %s: size
+#: includes/class-siteproof-report.php:1522
+msgid "Reduce font styles, use woff2 and subsetting."
+msgstr ""
+
+#. translators: %s: size
+#: includes/class-siteproof-report.php:1526
+#, php-format
+msgid "CSS %s on almost every page"
+msgstr ""
+
+#. translators: %d: number of links
+#: includes/class-siteproof-report.php:1544
+#, php-format
+msgid "%d broken link in header/footer - on every page"
+msgid_plural "%d broken links in header/footer - on every page"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: URL, 2: pages
+#: includes/class-siteproof-report.php:1556
+#, php-format
+msgid "%1$s (%2$d pages)"
+msgstr ""
+
+#. translators: 1: links, 2: internal, 3: pages
+#: includes/class-siteproof-report.php:1560
+#, php-format
+msgid "%1$d broken links (%2$d internal) on %3$d pages"
+msgstr ""
+
+#. translators: 1: links, 2: internal, 3: pages
+#: includes/class-siteproof-report.php:1560
+msgid "Details per page in the Links section."
+msgstr ""
+
+#. translators: 1: pages, 2: all pages, 3: rule
+#: includes/class-siteproof-report.php:1566
+#, php-format
+msgid "Accessibility on %1$d of %2$d pages: %3$s"
+msgstr ""
+
+#. translators: %d: elements
+#: includes/class-siteproof-report.php:1566
+#, php-format
+msgid "%d elements per page, e.g."
+msgstr ""
+
+#. translators: %d: elements
+#: includes/class-siteproof-report.php:1566
+msgid "fix in the theme."
+msgstr ""
+
+#. translators: %d: number of findings
+#: includes/class-siteproof-report.php:1589
+#, php-format
+msgid "%d text findings from proofreading"
+msgstr ""
+
+#. translators: %d: number
+#: includes/class-siteproof-report.php:1592
+#, php-format
+msgid "%d placeholder or copy-paste text on the website"
+msgid_plural "%d placeholder or copy-paste texts on the website"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number
+#: includes/class-siteproof-report.php:1592
+msgid "Replace before going live - see the Content section of the affected pages."
+msgstr ""
+
+#: includes/class-siteproof-report.php:1599
+msgid "No site-wide patterns found."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:79
+msgid "Audit run not found."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:104
+msgid "No published pages found for the selected post types."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:186
+msgid "Invalid status."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:321
+msgid "Not publicly reachable - local measurement is used instead."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:375
+msgid "Page has no collected content."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:395
+msgid "No AI provider configured."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:461
+msgid "No API key stored for this provider."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:493
+#: includes/class-siteproof-rest.php:509
+msgid "No key stored."
+msgstr ""
+
+#. translators: 1: URL, 2: performance score
+#: includes/class-siteproof-rest.php:503
+#, php-format
+msgid "OK - %1$s measured, score %2$d."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:513
+msgid "Connection OK."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:515
+msgid "No AI connection for text generation is set up under Settings › Connectors."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:517
+msgid "Connection failed - please check the key."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:544
+msgid "Invalid image or empty alt text."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:567
+msgid "You may not edit this page."
+msgstr ""
+
+#: includes/class-siteproof-rest.php:572
+msgid "Finding not found."
+msgstr ""
+
+#: includes/class-siteproof-settings.php:35
+msgid "Anthropic (Claude)"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:36
+msgid "OpenAI"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:37
+msgid "OpenRouter"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:40
+msgid "WordPress AI (site connections)"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:52
+msgid "LCP green up to"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:53
+msgid "LCP yellow up to"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:54
+msgid "LCP very critical from"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:55
+msgid "Page weight green up to"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:56
+msgid "Page weight yellow up to"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:57
+msgid "Page weight very critical from"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:58
+msgid "All images very critical from"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:59
+msgid "Image yellow from"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:60
+msgid "Image red from"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:61
+msgid "Image very critical from"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:62
+msgid "Image width yellow from (x needed)"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:63
+msgid "Image width red from (x needed)"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:64
+msgid "Compression yellow from"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:65
+msgid "Compression red from"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:66
+msgid "Meta title at least"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:66
+#: includes/class-siteproof-settings.php:67
+#: includes/class-siteproof-settings.php:68
+#: includes/class-siteproof-settings.php:69
+msgid "characters"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:67
+msgid "Meta title at most"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:68
+msgid "Meta description at least"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:69
+msgid "Meta description at most"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:70
+msgid "Rule counts as site-wide from"
+msgstr ""
+
+#: includes/class-siteproof-settings.php:70
+msgid "% of pages"
+msgstr ""
+
+#: includes/llm/class-siteproof-llm-anthropic.php:137
+#: includes/llm/class-siteproof-llm-openai.php:150
+msgid "The model declined the request."
+msgstr ""
+
+#: includes/llm/class-siteproof-llm-anthropic.php:143
+msgid "Answer was cut off (max_tokens)."
+msgstr ""
+
+#: includes/llm/class-siteproof-llm-anthropic.php:156
+#: includes/llm/class-siteproof-llm-openai.php:163
+#: includes/llm/class-siteproof-llm-wordpress.php:103
+msgid "Answer is not valid JSON."
+msgstr ""
+
+#: includes/llm/class-siteproof-llm-openai.php:156
+msgid "Answer was cut off (token limit)."
+msgstr ""
+
+#: includes/llm/class-siteproof-llm-openrouter.php:165
+msgid "The OpenRouter connection could not be verified (state mismatch or expired). Please try again."
+msgstr ""
+
+#: includes/llm/class-siteproof-llm-openrouter.php:186
+msgid "OpenRouter did not return a key."
+msgstr ""
+
+#: includes/llm/class-siteproof-llm-wordpress.php:85
+msgid "The WordPress AI Client is not available."
+msgstr ""

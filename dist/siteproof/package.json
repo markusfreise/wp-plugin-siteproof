@@ -1,0 +1,13 @@
+{
+  "name": "siteproof",
+  "private": true,
+  "description": "Build tooling for Siteproof - AI Content Audit for WordPress",
+  "license": "GPL-2.0-or-later",
+  "scripts": {
+    "build": "sass --no-source-map --style=compressed resources/scss/site.scss:assets/css/admin.css resources/scss/export.scss:assets/css/report.css",
+    "watch": "sass --watch --no-source-map resources/scss/site.scss:assets/css/admin.css resources/scss/export.scss:assets/css/report.css"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

@@ -1,0 +1,40 @@
+@use "functions" as *;
+
+.siteproof {
+    .sp-fix {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap-025x) var(--gap-05x);
+        align-items: center;
+        margin-top: var(--gap-025x);
+
+        &__input {
+            flex: 1 1 #{pxtorem(180)};
+            min-width: 0;
+        }
+
+        &__msg {
+            flex-basis: 100%;
+            font-size: var(--fs-small);
+            color: var(--c-copy-light);
+
+            &.is-ok {
+                color: var(--c-success);
+            }
+
+            &.is-error {
+                color: var(--c-danger);
+            }
+        }
+    }
+
+    .sp-options label {
+        display: block;
+        margin: var(--gap-025x) 0;
+    }
+
+    .sp-radio {
+        display: inline-block;
+        margin-right: var(--gap);
+    }
+}

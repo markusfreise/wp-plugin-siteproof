@@ -1,0 +1,9 @@
+@use "../functions" as *;
+
+.siteproof .sp-report {
+    max-width: var(--max-width);
+
+    .sp-proof td:nth-child(3) {
+        min-width: #{pxtorem(220)};
+    }
+}

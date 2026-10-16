@@ -1,0 +1,42 @@
+@use "../functions" as *;
+
+.siteproof.sp-settings {
+    .sp-model {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap-05x);
+        align-items: center;
+
+        select {
+            max-width: #{pxtorem(480)};
+        }
+    }
+
+    .sp-test__result {
+        &.is-ok {
+            color: var(--c-success);
+        }
+
+        &.is-error {
+            color: var(--c-danger);
+        }
+    }
+
+    .sp-thresholds {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(#{pxtorem(300)}, 1fr));
+        gap: 0 var(--gap-2x);
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            gap: var(--gap);
+            align-items: center;
+            margin: var(--gap-025x) 0;
+        }
+
+        &__input {
+            white-space: nowrap;
+        }
+    }
+}

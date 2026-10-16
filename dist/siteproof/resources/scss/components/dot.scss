@@ -1,0 +1,34 @@
+// Status dot; "very critical" is a red bar three dots wide with round ends. No blinking.
+.siteproof .sp-dot {
+    display: inline-block;
+    flex: none;
+    width: var(--dot);
+    height: var(--dot);
+    border-radius: 50%;
+    vertical-align: -0.08em;
+
+    &--sq {
+        border-radius: 2px;
+    }
+
+    &--red {
+        background: var(--c-danger);
+    }
+
+    &--yellow {
+        background: var(--c-warning);
+    }
+
+    &--green {
+        background: var(--c-success);
+    }
+
+    &--grey {
+        background: var(--c-muted);
+    }
+
+    &--crit {
+        width: calc(var(--dot) * 3);
+        border-radius: calc(var(--dot) / 2);
+    }
+}

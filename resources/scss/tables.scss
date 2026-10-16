@@ -1,0 +1,74 @@
+@use "functions" as *;
+
+.siteproof {
+    .sp-table {
+        border-collapse: collapse;
+        width: 100%;
+        background: var(--c-white);
+        margin: var(--gap-05x) 0;
+
+        th,
+        td {
+            text-align: left;
+            vertical-align: top;
+            padding: 0.4rem 0.6rem;
+            border-bottom: 1px solid var(--c-border-light);
+        }
+
+        thead th {
+            background: var(--c-background-soft);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+    }
+
+    .sp-kv th {
+        width: #{pxtorem(224)};
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .sp-assess th {
+        width: auto;
+        white-space: normal;
+        min-width: #{pxtorem(288)};
+        max-width: #{pxtorem(544)};
+        font-weight: 600;
+    }
+
+    .sp-overview td {
+        text-align: center;
+    }
+
+    .sp-scroll {
+        overflow-x: auto;
+    }
+
+    .sp-file {
+        word-break: break-all;
+        max-width: #{pxtorem(352)};
+    }
+
+    .sp-links a {
+        white-space: nowrap;
+        margin-right: 0.4rem;
+    }
+
+    .sp-images td {
+        white-space: nowrap;
+
+        &:nth-child(2),
+        &.sp-alt {
+            white-space: normal;
+            min-width: #{pxtorem(200)};
+        }
+    }
+
+    .sp-runs {
+        max-width: #{pxtorem(1400)};
+
+        td {
+            vertical-align: top;
+        }
+    }
+}

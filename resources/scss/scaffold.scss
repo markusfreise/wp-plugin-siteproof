@@ -1,0 +1,36 @@
+@use "functions" as *;
+
+.siteproof {
+    color: var(--c-copy);
+    font-size: var(--fs-copy);
+    line-height: 1.5;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+}
+
+// Standalone HTML export
+body.sp-export {
+    margin: 0;
+    padding: var(--gap-15x, 24px) 16px;
+    background: #f0f0f1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    .siteproof {
+        max-width: #{pxtorem(1400)};
+        margin: 0 auto;
+    }
+
+    .button {
+        font: inherit;
+        padding: 0.2rem 0.7rem;
+        border: 1px solid var(--c-corporate);
+        border-radius: var(--radius-small);
+        color: var(--c-corporate);
+        background: var(--c-white);
+        cursor: pointer;
+    }
+}

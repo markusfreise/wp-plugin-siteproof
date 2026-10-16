@@ -1,0 +1,49 @@
+@use "../functions" as *;
+
+.siteproof {
+    .sp-log {
+        margin-top: var(--gap);
+
+        ol {
+            max-height: #{pxtorem(240)};
+            overflow: auto;
+            font-size: var(--fs-small);
+        }
+
+        &__error {
+            color: var(--c-danger);
+        }
+    }
+
+    .sp-progress__current {
+        min-height: 1.5em;
+        color: var(--c-copy-light);
+    }
+
+    .sp-top {
+        margin: 0;
+
+        li {
+            margin: 0 0 0.15rem;
+        }
+    }
+
+    .sp-count {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        margin-right: var(--gap-05x);
+        font-variant-numeric: tabular-nums;
+    }
+
+    .sp-row-actions {
+        white-space: nowrap;
+    }
+
+    .sp-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap);
+        align-items: center;
+    }
+}

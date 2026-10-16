@@ -1,0 +1,9 @@
+@use "sass:math";
+
+@function pxtorem($px, $base: 16) {
+    @return math.div($px, $base) * 1rem;
+}
+
+@function pxtoem($px, $base: 16) {
+    @return math.div($px, $base) * 1em;
+}

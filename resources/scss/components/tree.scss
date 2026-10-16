@@ -1,0 +1,141 @@
+@use "../functions" as *;
+
+// Pages and sections as a collapsible tree (details/ul, no layout tables).
+.siteproof {
+    details > summary {
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: var(--gap-05x);
+        padding: 0.35rem 0;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &::before {
+            content: "";
+            flex: none;
+            width: 0.5em;
+            height: 0.5em;
+            margin-right: 0.1rem;
+            border: solid var(--c-copy-light);
+            border-width: 0 2px 2px 0;
+            transform: rotate(-45deg);
+            transition: transform 0.15s;
+        }
+    }
+
+    details[open] > summary::before {
+        transform: rotate(45deg);
+    }
+
+    .sp-pages,
+    .sp-tree {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sp-page {
+        background: var(--c-white);
+        border: 1px solid var(--c-border);
+        border-radius: var(--radius);
+        margin: var(--gap-05x) 0;
+        padding: 0 0.8rem 0.25rem;
+
+        // Sticky while its own page is in view; the next page header pushes it away.
+        > summary {
+            position: sticky;
+            top: calc(var(--sp-adminbar) + var(--sp-bar-h));
+            z-index: 40;
+            margin: 0 -0.8rem;
+            padding: 0.5rem 0.8rem;
+            background: var(--c-white);
+            border-radius: var(--radius) var(--radius) 0 0;
+        }
+
+        &[open] > summary {
+            box-shadow: 0 1px 0 var(--c-border-light);
+        }
+
+        &__title {
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+    }
+
+    .sp-tree {
+        position: relative;
+        margin: var(--gap-025x) 0 0.75rem 0.35rem;
+
+        > li {
+            position: relative;
+            padding-left: 1.4rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 1px;
+                background: var(--c-border);
+            }
+
+            &:last-child::before {
+                bottom: auto;
+                height: 1.05rem;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 1.05rem;
+                width: 1rem;
+                height: 1px;
+                background: var(--c-border);
+            }
+        }
+    }
+
+    .sp-meta-row {
+        padding-top: 0.4rem;
+        padding-bottom: 0.2rem;
+    }
+
+    .sp-sec {
+        &__title {
+            font-weight: 600;
+        }
+
+        &__body {
+            padding: 0.1rem 0 0.6rem;
+        }
+    }
+
+    .sp-sub {
+        margin: 0.6rem 0 0.2rem;
+        font-size: 1em;
+    }
+
+    .sp-fixed {
+        background: var(--c-background-soft);
+        border-radius: var(--radius-small);
+        padding: 0 0.6rem;
+        margin: var(--gap-05x) 0;
+
+        pre {
+            white-space: pre-wrap;
+            font-size: var(--fs-mini);
+            max-height: #{pxtorem(448)};
+            overflow: auto;
+            background: var(--c-white);
+            padding: 0.6rem;
+            border-radius: var(--radius-small);
+            margin: 0 0 0.6rem;
+        }
+    }
+}
